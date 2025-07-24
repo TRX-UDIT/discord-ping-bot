@@ -4,10 +4,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "register": "node deploy-commands.js"
+    "postinstall": "npm run register",
+    "register": "node register-commands.js"
   },
   "dependencies": {
     "discord.js": "^14.11.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.0.0"
   }
 }
